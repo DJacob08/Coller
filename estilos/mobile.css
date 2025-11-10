@@ -21,7 +21,7 @@ body {
 header {
     display: grid;
     gap: 5px;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 80px auto;
     grid-template-rows: auto auto;
     padding: 10px;
     margin: 10px;
@@ -38,7 +38,6 @@ header > img.logo {
 }
 
 header > h1 {
-
     background-color: var(--cor04);
     text-align: center;
     padding: 10px;
@@ -89,6 +88,7 @@ div.campo > label {
 div.campo > input[type=text] {
     margin: 0px 0px 0px auto;
     width: 80%;
+    font-size: 1.4em;
     border-radius: 6px 0px 0px 6px;
     background-color: var(--cor01);
     border: 1px solid var(--cor03);

@@ -36,35 +36,44 @@
             </form>
         </div>
 
-        <section>
+        <section id="filtros">
             <form action="" method="post" autocomplete="on"></form>
-                <h2>Filtros</h2>
-                <label for="minval">Valor Mínimo:</label>
-                <input type="range" name="minval" id="iminval" min="0" max="9999" value="3500" oninput="imival.innerHTML = Number(iminval.value)">
-                <output id="imival">3500</output>
+                <div>
+                    <h2>Filtros</h2>
+                    <div id="fminimo">
+                    
+                        <label for="minval">Valor Mínimo:</label>
+                        <input type="number" name="minval" id="iminval" min="0" max="9999" maxlength="4" oninput="imival.innerHTML = Number(iminval.value)" placeholder="0 a 9999" size="8">
 
-                <label for="maxval">Valor Máximo:</label>
-                <input type="range" name="maxval" id="imaxval" min="1" max="10000" value oninput="imaval.innerHTML = Number(imaxval.value)">
-                <output id="imaval">3500</output>
+                    </div>
+                    <div id="fmaximo">
+                        <label for="maxval">Valor Máximo:</label>
+                        <input type="number" name="maxval" id="imaxval" min="1" max="10000" oninput="imaval.innerHTML = Number(imaxval.value)" placeholder="1 a 10000" size="8">
 
-                <label for="marcas">Marcas:</label>
-                <select name="marcas" id="imarcas">
-                    <option value="todas">Todas</option>
-                    <option value="Fiat">Fiat</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Volkswagen">Volkswagen<option>
-                    <option value="Renault">Renault</option>
-                </select>
-
-                <label for="cor">Cores:</label>
-                <select name="cor" id="icor">
-                    <option value="todas">Todas</option>
-                    <option value="branco">Branco</option>
-                    <option value="cinza">Cinza</option>
-                    <option value="preto">Preto</option>
-                    <option value="azul">Azul</option>
-                    <option value="Vermelho">Vermelho</option>
-                </select>
+                    </div>
+                    <div id="fmarcas">
+                        <label for="marcas">Marcas:</label>
+                        <select name="marcas" id="imarcas">
+                            <option value="todas">Todas</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Renault">Renault</option>
+                        </select>
+                    </div>
+                    <div id="fcores">
+                        <label for="cor">Cores:</label>
+                        <select name="cor" id="icor">
+                            <option value="todas">Todas</option>
+                            <option value="branco">Branco</option>
+                            <option value="cinza">Cinza</option>
+                            <option value="preto">Preto</option>
+                            <option value="azul">Azul</option>
+                            <option value="Vermelho">Vermelho</option>
+                        </select>
+                    </div>
+                </div>
         </form>
         </section>
 

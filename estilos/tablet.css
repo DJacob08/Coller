@@ -2,3 +2,29 @@
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Configuração para tablets */
     
 }
+/*
+section#filtros {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 1fr 40% 10% 40% 1fr;
+}
+
+section#filtros > h2 {
+    grid-area: 1 / 2 / 2 / -2;
+}
+
+section#filtros > div#fminimo {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+section#filtros > div#fmaximo {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+section#filtros > div#fmarcas {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+section#filtros > div#fcores {
+    grid-area: 3 / 4 / 4 / 5;
+} */

@@ -106,6 +106,73 @@ div.campo > button[type=submit] {
     font-weight: bold;
 }
 
+section#filtros {
+    padding: 10px;
+    margin: 5px;
+
+    border-radius: 8px;
+
+    background-color: var(--cor03);
+}
+
+section#filtros > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--cor02);
+    border-radius: 6px;
+    width: 75vw;
+    margin: auto;
+}
+
+section#filtros > div > h2 {
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+
+section#filtros > div > div#fminimo > input[type=number] , section#filtros > div > div#fmaximo > input[type=number] ,
+section#filtros > div > div#fmarcas > select,
+section#filtros > div > div#fcores  > select {
+
+    appearance: textfield;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid var(--cor03);
+    font-size: 1.4em;
+}
+
+section#filtros > div > div#fminimo, div#fmaximo > output {
+    height: 20px;
+}
+
+section#filtros > div > div#fminimo {
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+
+section#filtros > div > div#fmaximo {
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 6px;
+}
+
+section#filtros > div > div#fmarcas {
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 6px;
+
+}
+
+section#filtros > div > div#fcores {
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 6px;
+
+}
+
 section#carros {
     display: grid;
     grid-template-columns: 1fr 90vw 1fr;
@@ -141,15 +208,20 @@ div.item {
 
 div > .img {
     grid-area: 1 / 2 / 2 / 7;
-    border: 1px dashed blue;
+
+    width: 100%;
     border-radius: 10px;
-    background-size: cover;
+
+    object-fit: cover;
+    overflow: hidden;
+
+    background-color: var(--cor02);
 }
 
 div > .modelo {
     grid-area: 2 / 2 / 3 / 7;
     padding: 5px;
-    border: 1px dashed blue;
+
     background-color: var(--cor03);
     border-radius: 6px;
 }
@@ -157,7 +229,7 @@ div > .modelo {
 div > .ano {
     grid-area: 3 / 2 / 4 / 4 ;
     padding: 5px;
-    border: 1px dashed blue;
+
     background-color: var(--cor02);
     border-radius: 6px;
 }
@@ -165,7 +237,7 @@ div > .ano {
 div > .motor {
     grid-area: 3 / 5 / 4 / 7;
     padding: 5px;
-    border: 1px dashed blue;
+
     background-color: var(--cor02);
     border-radius: 6px;
 }
@@ -173,7 +245,7 @@ div > .motor {
 div > .valor {
     grid-area: 4 / 2 / 5 / 4;
     padding: 5px;
-    border: 1px dashed blue;
+
     background-color: var(--cor02);
     border-radius: 6px;
 }
@@ -181,7 +253,7 @@ div > .valor {
 div > .km {
     grid-area: 4 / 5 / 5 / 7;
     padding: 5px;
-    border: 1px dashed blue;
+
     background-color: var(--cor02);
     border-radius: 6px;
 }
